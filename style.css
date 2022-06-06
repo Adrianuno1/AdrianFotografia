@@ -1,0 +1,623 @@
+:root {
+    --bg-negro:#060606;
+    --bg-gris: #5B5B5B;
+    --color-btn-link: #1d1d61;
+    --color-text: #fbfbfb;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-negro);
+    color: var(--color-text);
+    width: 100vw;
+    overflow-wrap:initial ;
+} 
+
+.navegacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav_lista{
+    display: none;
+}
+
+.logo_nombre{
+    font-size: 16px;  
+    margin-left: 10px;  
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.icono_menu{
+    font-size: 25px;
+    z-index: 1; 
+}
+
+
+.menudespegable{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.menu_despegable{
+    background-color: var(--color-text);
+    width: 100%;
+    height: 600px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 2;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-bottom: 10px;
+    
+}
+
+.uno{
+    margin-right: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: #060606;
+}
+
+.btn_cerrar{
+    font-size: 35px;
+    color: black;
+
+
+}
+
+
+/* ==========inicio============ */
+
+#inicio{
+    width: 100%;
+    height: auto;
+}
+
+div.fondonegro{
+    width: 100%;
+    height: 285px;
+    position: relative;
+}
+
+
+.conte_infoperfil{
+    width: 230px;
+    height: auto;
+    position: absolute;
+    color: black;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    right: 30px;
+}
+
+
+.texto_perfil{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:  var(--color-text);
+}
+
+.texto_perfil > span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1d1d61;
+}
+
+.img_perfil{
+    background-image: url("img/perfil_goyo.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 120px 120px 0px 0px;
+    border: 1px solid;
+    border-color: var(--color-text);
+    width: 217px;
+    height: 350px;
+}
+
+.flecha_abajo{
+    font-size: 40px;
+    opacity: 1;
+    margin-top: -20px;
+    color: #fbfbfb;
+    z-index: 1 ;
+}
+
+.fondogris{
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 216px;
+    position: relative;
+    z-index: -1;
+}
+
+/* =====portafolio ======*/
+
+
+.portafolio{
+    width: 100%;
+    height: auto;
+}
+
+
+.fondogris_portafol{
+    width: 100%;
+    height: 380px;
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.info_portafolio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: scroll;
+    position: absolute;
+    top: 590px
+}
+
+.text_portafo{
+    font-size: 30px;  
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    color: #060606;
+}
+
+.img_portafolio{
+    width: auto; 
+    display: inline-flex;
+    margin-left: 630px;
+    float: right;
+    margin-top: 30px;
+}
+
+.img_uno{
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 330px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.uno{
+    background-image: url("img/boda.jpg");
+}
+.dos{
+    background-image: url("img/xv.jpg");
+}
+.tres{
+    background-image: url("img/casual.jpg");
+}
+
+.img_descripcion{
+    width: 100%;
+    height: 20px;
+    background-color: #060606;
+    text-align: center;
+    opacity: 80%;
+}
+
+.img_descripcion a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Lato',    sans-serif;
+}
+
+.fondonegro_portafolio{
+    background-color: var(--bg-negro);
+    width: 100%;
+    height: 180px;
+    position: relative;
+    z-index: -1;
+}
+
+/* ====== sobre mi ======== */
+#sobreMi{
+    width: 80%;
+    height: auto;
+    background-color: var(--bg-negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+.info_sobremi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato',    sans-serif;
+}
+
+.texto_sobremi{
+    font-size: 20px;
+    font-family: 'Lato',    sans-serif;  
+}
+
+h4{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato',    sans-serif;
+}
+
+.texto_ubi{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato',    sans-serif;
+}
+
+.bxl-facebook-circle{
+    color: #3b5998;
+}
+
+.bxl-instagram-alt{
+   color: #d10808;
+}
+
+
+.bxl-whatsapp{
+    color: #43d854;
+}
+
+@media only screen and (min-width: 378px){
+    
+    .conte_infoperfil{
+        top: 40px;
+        right: 70px;
+    }
+}
+
+
+@media only screen and (min-width: 412px){
+    
+    .conte_infoperfil{
+        top: 40px;
+        right: 80px;
+    }
+}
+
+@media only screen and (min-width: 466px){
+    
+    .conte_infoperfil{
+        top: 40px;
+        right: 110px;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    
+    .conte_infoperfil{
+        top: 40px;
+        right: 130px;
+    }
+}
+
+@media only screen and (min-width: 519px){
+    
+    .conte_infoperfil{
+        top: 40px;
+        right: 140px;
+    }
+    div.fondonegro{
+        width: 100%;
+        height: 300px;
+    }
+    .menu_despegable{
+        background-color: var(--color-text);
+        width: 100%;
+        height: 500px;
+    }
+    
+}
+
+@media only screen and (min-width: 670px){
+
+    .conte_infoperfil{
+        top: 40px;
+        right: 200px;
+    }
+
+    .img_portafolio{
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+
+    .icono_menu{
+        display: none;
+    }
+
+    .nav_lista{
+        display: inline-block;
+        color: aliceblue;
+    }
+
+    .nav_lista ul{
+        display: flex;
+        margin-right: 0px;
+    }
+
+    .nav_lista ul li{
+        list-style: none;
+        margin-right: 10px;
+    }
+
+    .nav_lista ul{
+        text-decoration: none;
+    }
+
+    .nav_lista ul li a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight:bolder;
+    }
+
+}
+
+
+@media only screen and (min-width: 757px){
+    .conte_infoperfil{
+        flex-direction: row;
+        width: 100%;
+        top:70px;
+        right: 0;
+
+    }
+
+    .img_perfil{
+        margin-left: 70px;
+        width: 270px;
+        height: 440px;
+    }
+
+
+
+    .conte_flecha{
+        display: none;
+
+    }
+    
+    .texto_perfil{
+        font-size: 30px;
+        margin-bottom: 65px;
+    }
+
+    .text_portafo{
+        font-size: 40px;
+    }
+
+    .img_portafolio{
+        margin-left: 180px;
+    }
+
+    .info_portafolio::-webkit-scrollbar {
+    display: none;
+    }
+
+    .info_portafolio {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+}
+
+
+@media only screen and (min-width: 850px){
+    /* .conte_infoperfil{
+        flex-direction: row;
+        width: 100%;
+        top:70px;
+        right: 0;
+
+    } */
+
+    .logo_nombre{
+        font-size: 30px;  
+    }
+
+    .nav_lista > ul{
+        padding-right: 12px;
+    }
+    .nav_lista > ul > li > a{
+        font-size: 30px !important;
+    }
+
+    .img_perfil{
+        margin-left: 70px;
+        width: 350px;
+        height: 480px;
+
+    }
+
+    .texto_perfil{
+        font-size: 50px;
+        margin-bottom: 230px;
+    }
+
+    .juarez{
+        color: #060606;
+    }
+
+    .texto_perfil > span {
+        font-size: 60px;
+        font-weight: bold;
+        color: #1d1d61;
+    }
+
+    div.fondonegro{
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+
+    .fondogris{
+        height: 300px;
+        
+    }
+
+    .fondogris_portafol{
+        
+        height: 450px;
+
+    }
+
+    .info_portafolio{
+        margin-top: 200px;
+        flex-direction: row;
+     }
+
+     .img_uno{
+        width: 350px;
+        height: 500px;
+     }
+
+     .fondonegro_portafolio{
+         height: 300px;
+     }
+
+     .img_portafolio{
+        margin-left: 80px;
+    }
+
+    
+
+    .info_fotogrago{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre_mi{
+        width: 40%;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texto_contacto{
+        width: 40%;
+    }
+
+    .iconos_contacto{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobreMi{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sobre_mi{
+        margin-right: 20px;
+    }
+
+    .iconos_contacto{
+        padding-right: 95px;
+    }
+
+    .ubicacion{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .texto_ubi{
+        margin-right: 130px;
+    }
+
+
+}
+
+
+/* .pfl_lista{
+    width: auto;
+    background-color: #fbfbfb;
+}
+
+.pfl_lista ul{
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no;
+    overflow: hidden;
+
+}
+
+.pfl_lista ul li{
+    display: inline-block;
+    color: #060606;
+    font-size: 40px; 
+    margin-right: 50px;   
+} */
+
+
+
+
+
+
+
+
+
+

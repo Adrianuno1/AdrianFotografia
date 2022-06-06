@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregorio Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+    </style>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class=" navegacion">
+        <div class="logo">
+            <h1 class=" logo_nombre">Gregorio zaragoza <br> fotografia</h1>
+        </div>
+        <div class="icono_menu">
+            <span  onclick="desplegarMenu()" class="iconify" data-icon="bx:menu-alt-right"></span>
+        </div>
+            <div class="nav_lista">
+        <ul>
+            <li><a href="">INICIO</a></li>
+            <li><a href="portafolio.html">PORTAFOLIO</a></li>
+            <li><a href="#sobreMi">SOBRE MI</a></li>
+       </ul>
+   </div>
+        <div class="menudespegable">
+        <div class="menu_despegable  animate__animated">
+            <nav>
+                <ul>
+                    <li><a href="#inicio"><span class="iconify uno" data-icon="ant-design:home-outlined"></span>INICIO</a></li>
+                    <li><a href="#portafolio"><span class="iconify uno" data-icon="ic:baseline-photo-camera"></span>PORTAFOLIO</a></li>
+                    
+                    <li><a href="#sobreMi"><span class="iconify uno" data-icon="bxs:user-detail"></span>SOBRE MI</a></li>
+                </ul>                
+            </nav>
+                <span onclick="cerrarMenuDespegable()" class="iconify btn_cerrar" data-icon="carbon:close-outline"></span>
+        </div>
+    </div>
+    </header>
+    <section id="inicio">
+        <div class="fondonegro">
+
+        </div>
+        <div class="conte_infoperfil">
+            <p class=" animate__animated animate__fadeInUp  texto_perfil"><span>Hola,</span> soy <br> Gregorio. <br>
+            <span>Fotografo</span> en <br>
+             Ciudad Juarez</p>
+            <div class="img_perfil animate__animated animate__fadeInUp animate__delay-1s "></div>
+
+            <a class="conte_flecha" href="#portafolio"><span class="iconify flecha_abajo" data-icon="bi:arrow-down-circle-fill"></span></a>
+        </div>  
+        <div class="fondogris">
+        </div>
+
+    </section>
+            <section id="portafolio">
+                <div class="fondogris_portafol"></div>
+
+                <div class="info_portafolio">
+                <div class="text_portafolio"  data-aos="fade-up" data-aos-duration="2000">
+                    <p class="text_portafo">PORTAFOLIO</p>
+                </div>
+                <div class="img_portafolio" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="img_uno uno" ><a href="portafolio.html"></a></div>
+                    <div class="img_uno dos" ></div>
+                    <div class="img_uno tres"></div>
+                </div>
+
+            </div>
+            <div class="fondonegro_portafolio"></div>
+            </section>
+                    <section id="sobreMi">
+                        <!-- <div class="info_sobremi"> -->
+                            <div class="info_fotogrago" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="sobre_mi">
+                                <h3>Sobre mi</h3>
+                                </div>
+                                <div class="txt_sobremi">
+                                <p class="texto_sobremi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur aut molestias eum laboriosam veritatis dolores suscipit officiis! Optio, laborum alias. Sapiente inventore quis similique, nam nesciunt ratione velit corporis.</p>
+                            </div>
+                            </div>
+
+                            <div class="contacto" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="txt_cntacto">
+                                <h4 class="texto_contacto">Contacto</h4>
+                                </div>
+
+                                <div 
+                                class="iconos_contacto">
+                                    <i class='bx bxl-facebook-circle bx-md bx-tada'></i>
+                                    <i class='bx bxl-instagram-alt bx-md bx-tada'></i>
+                                    <i class='bx bxl-whatsapp bx-md bx-tada' ></i>
+                                </div>
+                            </div>
+
+                            <!-- <div class="ubicacion" data-aos="fade-up" data-aos-duration="2000">
+                                <p class="texto_ubi">   local establecido</p>
+                                <img src="img/Captura.PNG" alt="">
+                            </div> -->
+                        <!-- </div> -->
+                    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="/scrip.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>
