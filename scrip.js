@@ -45,6 +45,9 @@ function cerrarMenuDespegable (){
     console.log("click cerrar")
     conteMenu.style.visibility = "visible"
     logo.style.visibility = "visible"
+    setTimeout(()=>{
+        contemenudespegable.style.display = "none"
+    }, 2000)
 }
 
 function clickScroll(){

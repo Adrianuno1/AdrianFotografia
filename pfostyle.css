@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: #0a0908;
+    background-color: #222121;
     font-family: 'Joan', serif;
     color: #f8f7ff;
 
@@ -34,6 +34,7 @@ body{
     margin-left: 10px;  
     font-family: 'Bebas Neue', cursive;
     color: white;
+    padding-top: 5px;
 }
 
 .icono_menu{
@@ -127,7 +128,7 @@ nav ul li a{
         transform: scale(0);
     }
     to {
-        transform: scale(1);
+        transform: scale(2);
     }
 }
 .modal img {

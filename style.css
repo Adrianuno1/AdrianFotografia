@@ -39,7 +39,7 @@ body{
 }
 
 .icono_menu{
-    font-size: 25px;
+    font-size: 38px;
     z-index: 1; 
 }
 
@@ -54,6 +54,9 @@ body{
     overflow: hidden;
 }
 
+
+
+
 .menu_despegable{
     background-color: var(--color-text);
     width: 100%;
@@ -66,12 +69,16 @@ body{
     z-index: 2;
 }
 
+/* .menu_despegable > nav > ul > li > a > span{
+    color: #060606 !important;
+} */
+
 nav ul{
     list-style-type: none;
 }
 
 nav ul li{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
 }
 
@@ -84,10 +91,13 @@ nav ul li a{
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     color: #060606;
+    background-color: none;
+    padding-left: 10px;
 }
 
 .btn_cerrar{
-    font-size: 35px;
+    margin-top: 10px;
+    font-size: 40px;
     color: black;
 
 
@@ -118,7 +128,7 @@ div.fondonegro{
     justify-content: center;
     align-items: center;
     top: 40px;
-    right: 30px;
+    right: 53px;
 }
 
 
@@ -136,7 +146,7 @@ div.fondonegro{
 }
 
 .img_perfil{
-    background-image: url("img/perfil_goyo.jpg");
+    background-image: url("img/edit_new3.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 120px 120px 0px 0px;
@@ -157,7 +167,7 @@ div.fondonegro{
 .fondogris{
     background-color: #fbfbfb;
     width: 100%;
-    height: 216px;
+    height: 180px;
     position: relative;
     z-index: -1;
 }
@@ -173,7 +183,7 @@ div.fondonegro{
 
 .fondogris_portafol{
     width: 100%;
-    height: 380px;
+    height: 340px;
     background-color: #fbfbfb;
     position: relative;
 }
@@ -220,10 +230,10 @@ div.fondonegro{
     background-image: url("img/boda.jpg");
 }
 .dos{
-    background-image: url("img/xv.jpg");
+    background-image: url("img/IMG_9200.jpg");
 }
 .tres{
-    background-image: url("img/casual.jpg");
+    background-image: url("img/IMG_3537.jpg");
 }
 
 .img_descripcion{
@@ -398,6 +408,11 @@ h4{
         font-weight:bolder;
     }
 
+    .menudespegable{
+        display: none;
+        z-index: -1;
+    }
+
 }
 
 
@@ -470,8 +485,8 @@ h4{
 
     .img_perfil{
         margin-left: 70px;
-        width: 350px;
-        height: 480px;
+        width: 390px;
+        height: 500px;
 
     }
 
